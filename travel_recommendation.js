@@ -49,6 +49,9 @@ function showSearchResult() {
     resultWindow.classList.add('result-window');
     resultWindow.innerHTML = "<h1>Search Result</h2>";
     document.getElementById('results-container').appendChild(resultWindow);
+    if(result.length === 0){
+        resultWindow.innerHTML += "<img class='not-found' src='https://cdn.dribbble.com/userupload/42053595/file/original-e76d75ea74138eca6697b848a6b7af13.png?resize=800x600' alt='Nothing Found :/'>"
+    }
     result.forEach(site => {
         const card = document.createElement('div');
         card.classList.add('card');
@@ -69,5 +72,19 @@ function clearSearchResult() {
     }
 }
 
-searchBtn.addEventListener("click", showSearchResult);
-clearBtn.addEventListener("click", clearSearchResult);
+if(searchBtn){
+    searchBtn.addEventListener("click", showSearchResult);
+}
+if(clearBtn){
+    clearBtn.addEventListener("click", clearSearchResult);
+}
+
+const contactForm = document.getElementById("contact-form");
+
+if (contactForm) {
+    contactForm.addEventListener("submit", function (event) {
+        event.preventDefault();
+        alert("Submitted");
+        contactForm.reset();
+    });
+}

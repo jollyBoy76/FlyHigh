@@ -374,3 +374,7 @@ form {
 .result-window::-webkit-scrollbar-track{
     background:#eee;
 }
+
+.not-found{
+    overflow:hidden;
+}
