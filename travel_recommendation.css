@@ -310,3 +310,67 @@ form {
 .member button:hover {
     background: #0c8d8b;
 }
+
+.result-window{
+    position:fixed;
+    top:100px;
+    right:40px;
+
+    width:850px;
+    max-height:80vh;
+    overflow-y:auto;
+
+    background:white;
+    border-radius:15px;
+    box-shadow:0 15px 35px rgba(0,0,0,.35);
+
+    padding:25px;
+    z-index:1000;
+}
+
+.result-window h1{
+    margin-bottom:25px;
+    color:#222;
+    text-align:center;
+}
+
+.card{
+    background:#fff;
+    border-radius:12px;
+    overflow:hidden;
+    box-shadow:0 5px 15px rgba(0,0,0,.15);
+    margin-bottom:20px;
+}
+
+.card img{
+    width:100%;
+    height:200px;
+    object-fit:cover;
+    display:block;
+}
+
+.card h2{
+    padding:15px 15px 8px;
+    font-size:1.3rem;
+    color:#222;
+}
+
+.card p{
+    padding:0 15px 20px;
+    color:#555;
+    line-height:1.6;
+    font-size:.95rem;
+}
+
+.result-window::-webkit-scrollbar{
+    width:8px;
+}
+
+.result-window::-webkit-scrollbar-thumb{
+    background:#999;
+    border-radius:10px;
+}
+
+.result-window::-webkit-scrollbar-track{
+    background:#eee;
+}
