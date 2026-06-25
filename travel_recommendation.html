@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FlyHigh</title>
+
+    <link rel="stylesheet" href="travel_recommendation.css">
+
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+
+<header>
+    <nav>
+        <div class="logo">FlyHigh</div>
+        <ul class="nav-links">
+            <li><a href="travel_recommendation.html">Home</a></li>
+            <li><a href="travel_recommendation_about.html">About</a></li>
+            <li><a href="travel_recommendation_contact.html">Contact</a></li>
+        </ul>
+        <div class="search-bar">
+            <input
+                type="search"
+                id="searchLoc"
+                placeholder="Enter a Destination or Keyword">
+            <button id="searchBtn">Search</button>
+            <button id="clearBtn">Clear</button>
+        </div>
+    </nav>
+</header>
+<main>
+    <section class="hero">
+        <aside class="social-links">
+            <a href="#">
+                <i class="fa-brands fa-x-twitter"></i>
+            </a>
+            <a href="#">
+                <i class="fa-brands fa-facebook-f"></i>
+            </a>
+            <a href="#">
+                <i class="fa-brands fa-instagram"></i>
+            </a>
+            <a href="#">
+                <i class="fa-brands fa-youtube"></i>
+            </a>
+        </aside>
+        <div class="hero-content">
+            <h1>Adventure to the Unknown</h1>
+            <p>
+                Discover breathtaking destinations, hidden gems,
+                and unforgettable experiences around the world.
+                Let FlyHigh guide your next adventure.
+            </p>
+            <button>Book Now</button>
+        </div>
+        <div id="results"></div>
+    </section>
+
+</main>
+
+<script src="travel_recommendation.js"></script>
+
+</body>
+</html>
